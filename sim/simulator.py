@@ -178,9 +178,9 @@ class Simulator:
 
             raw_gps = self.sensors.sample_gps(t, new_state.pos, new_state.vel)
             if raw_gps is not None:
-                gps_measurements_list.append(raw_gps)
                 # Apply attack to GPS
                 gps_meas = attack.apply_gps(t, raw_gps) if attack else raw_gps
+                gps_measurements_list.append(gps_meas)
                 if gps_meas.valid:
                     last_reported_gps = gps_meas.pos.copy()
 

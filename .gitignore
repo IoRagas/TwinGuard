@@ -42,8 +42,8 @@ htmlcov/
 # Project outputs & temporary files
 output/
 eval/results/
-eval/*.png
-eval/*.csv
-!eval/sample_results.csv
+!eval/results.csv
+!eval/*.png
+!eval/summary_table.md
 demo/*.mp4
 demo/*.gif
