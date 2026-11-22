@@ -3,7 +3,7 @@ from sim.drone import Drone, DroneState
 from sim.wind import WindModel
 from sim.sensors import SensorSuite, GPSMeasurement, IMUMeasurement
 from sim.mission import WaypointMission
-from sim.simulator import Simulator, FlightLog
+from sim.simulator import Simulator, MissionResult
 
 __all__ = [
     "Drone",
@@ -14,5 +14,5 @@ __all__ = [
     "IMUMeasurement",
     "WaypointMission",
     "Simulator",
-    "FlightLog",
+    "MissionResult",
 ]
