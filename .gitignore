@@ -47,3 +47,4 @@ eval/results/
 !eval/summary_table.md
 demo/*.mp4
 demo/*.gif
+!demo/fallback_demo.gif
